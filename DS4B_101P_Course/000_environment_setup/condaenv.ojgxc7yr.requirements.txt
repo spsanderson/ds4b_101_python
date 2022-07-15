@@ -34,7 +34,7 @@ uvicorn==0.13.4
 sqlalchemy==1.4.7
 xlsxwriter==1.3.7
 openpyxl
-jupyterlab==3.0.13
+jupyterlab==3.0.17
 jupyterlab-server==2.4.0
 ipywidgets==7.6.3
 ipympl==0.7.0
