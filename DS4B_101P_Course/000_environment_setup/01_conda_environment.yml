@@ -80,7 +80,7 @@ dependencies:
       - jupyterlab==3.0.13
       - jupyterlab-server==2.4.0
       - jupyter-packaging==0.7.12
-      - jupyter-server==1.6.1 # Solves ImportError: cannot import name 'get_version_info' from 'jupyter_packaging'
+      - jupyter-server==1.15.4 # Solves ImportError: cannot import name 'get_version_info' from 'jupyter_packaging'
       - ipywidgets==7.6.3
       - ipympl==0.7.0
       - jupytext
