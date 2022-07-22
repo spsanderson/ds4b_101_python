@@ -22,31 +22,31 @@ dependencies:
   - pip:
       # Core Data
       - numpy==1.20.2
-      #- pandas==1.2.2
+      - pandas==1.2.2
 
       # R Data
-      # - plydata==0.4.3
-      # - siuba==0.0.24
-      # - datatable
+      - plydata==0.4.3
+      - siuba==0.0.24
+      - datatable
 
       # Visualization
-      #- matplotlib==3.3.4
-      #- plotnine==0.7.1
-      #- mizani==0.7.2
-      #- plotly==4.14.3
-      # - altair==4.1.0
+      - matplotlib==3.3.4
+      - plotnine==0.7.1
+      - mizani==0.7.2
+      - plotly==4.14.3
+      - altair==4.1.0
 
       # EDA
-      #- pandas-profiling
-      #- ppscore==1.2.0
-      #- pyjanitor==0.20.14
+      - pandas-profiling
+      - ppscore==1.2.0
+      - pyjanitor==0.20.14
 
       # Modeling & Machine Learning
-      #- statsmodels
+      - statsmodels
       # - nltk==3.5
       # - h2o==3.32.0.3
-      # - pycaret==2.3.0
-      #- scikit-learn==0.23.2
+      - pycaret==2.3.10
+      - scikit-learn==0.23.2
       # - xgboost==0.90
       # - lightgbm==3.1.1
       # - catboost==0.24.4
