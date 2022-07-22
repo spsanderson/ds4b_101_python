@@ -21,7 +21,7 @@ dependencies:
   - pip
   - pip:
       # Core Data
-      - numpy==1.22.0
+      - numpy==1.21.6
       - pandas==1.2.2
 
       # R Data
