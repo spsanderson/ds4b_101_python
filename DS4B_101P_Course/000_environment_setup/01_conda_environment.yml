@@ -43,8 +43,8 @@ dependencies:
 
       # Modeling & Machine Learning
       - statsmodels
-      # - nltk==3.5
-      # - h2o==3.32.0.3
+      #- nltk==3.5
+      - h2o==3.32.0.3
       - pycaret==2.3.10
       - scikit-learn==0.23.2
       # - xgboost==0.90
