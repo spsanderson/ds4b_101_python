@@ -84,18 +84,18 @@ dependencies:
       - ipywidgets==7.6.3
       - ipympl==0.7.0
       - jupytext
-      - papermill==2.3.3
-      #- pandoc
+      #- papermill==2.3.3
+      - pandoc
 
       # Apps
-      # - streamlit==0.80.0
+      - streamlit==0.80.0
 
       # Terminal Formatting
-      #- rich
+      - rich
 
       # Extending Pandas
-      #- pandas_flavor==0.2.0
+      - pandas_flavor==0.2.0
 
       # R users
-      #- radian
-      #- jedi==0.17.2
+      - radian
+      - jedi==0.17.2
