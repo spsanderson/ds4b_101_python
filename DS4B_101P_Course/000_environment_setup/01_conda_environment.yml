@@ -17,7 +17,7 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - python=3.7.1
+  - python=3.9.12
   - pip
   - pip:
       # Core Data
