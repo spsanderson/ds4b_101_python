@@ -8,6 +8,8 @@
 # 1.0 Load Libraries ----
 
 # Core Python Data Analysis
+import pandas as pd
+
 
 
 # Plotting
