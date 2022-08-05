@@ -86,6 +86,7 @@ dependencies:
       - jupytext
       - papermill
       - pandoc
+      - ipython
 
       # Apps
       - streamlit==0.80.0
