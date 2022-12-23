@@ -41,7 +41,7 @@ joblib==1.0.1
 json5==0.9.10
 jsonschema==4.16.0
 jupyter-client==7.3.5
-jupyter-core==4.11.1
+jupyter-core==4.11.2
 jupyter-packaging==0.7.12
 jupyter-server==1.18.1
 jupyterlab==3.0.13
