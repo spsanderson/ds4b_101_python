@@ -10,6 +10,23 @@
 #    conda env export --name ds4b_101p > envname.yml
 #    conda env remove --name ds4b_101p
 #    conda env list
+#
+# Alternative Using pip & virtual environments:
+#  - Create empty virtual environment:
+#      Mac: python3 -m venv ds4b_101_p
+#      Windows: python -m venv ds4b_101_p
+#  - Activate env:
+#      source ds4b_101_p activate
+#      (if this doesn't work, use Command Palette > Select Python Interpreter > ds4b_101_p)
+#  - Install the requirements.txt
+#      pip install -r 000_environment_setup/requirements.txt
+#  - Adding packages from requirements.txt
+#      Mac: where python
+#      Windows: which python
+#      path/to/python -m pip install
+#  - Freezing dependencies
+#      pip freeze > requirements.txt
+
 
 name: ds4b_101p
 channels:
@@ -17,24 +34,25 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - python=3.9.12
+  - python=3.7.1
   - pip
   - pip:
       # Core Data
-      - numpy==1.21.6
+      - scikit-misc==0.1.3
+      - numpy==1.20.2
       - pandas==1.2.2
 
       # R Data
       - plydata==0.4.3
-      - siuba==0.0.24
-      - datatable
+      # - siuba==0.0.24
+      # - datatable
 
       # Visualization
       - matplotlib==3.3.4
       - plotnine==0.7.1
       - mizani==0.7.2
       - plotly==4.14.3
-      - altair==4.1.0
+      # - altair==4.1.0
 
       # EDA
       - pandas-profiling
@@ -43,31 +61,30 @@ dependencies:
 
       # Modeling & Machine Learning
       - statsmodels
-      - nltk==3.5
-      - h2o==3.32.0.3
-      - pycaret==2.3.10
+      # - nltk==3.5
+      # - h2o==3.32.0.3
+      # - pycaret==2.3.0
       - scikit-learn==0.23.2
-      - xgboost==0.90
-      - lightgbm==3.1.1
-      - catboost==0.24.4
-      - sklearn-pandas==2.0.4
-      - scikit-misc==0.1.4
+      # - xgboost==0.90
+      # - lightgbm==3.1.1
+      # - catboost==0.24.4
+      # - sklearn-pandas==2.0.4
 
       # Time Series
       - sktime==0.5.3
       - pmdarima==1.8.1
-      - tsfresh==0.17.0
+      # - tsfresh==0.17.0
 
       # Scalability & Automation
-      - dask==2.30.0
-      - dask-ml==1.8.0
-      - dask-xgboost==0.1.11
+      # - dask==2.30.0
+      # - dask-ml==1.8.0
+      # - dask-xgboost==0.1.11
       - zict==1.0.0
       - joblib==1.0.1
 
       # API
-      - fastapi==0.63.0
-      - uvicorn==0.13.4
+      # - fastapi==0.63.0
+      # - uvicorn==0.13.4
 
       # Database
       - sqlalchemy==1.4.7
@@ -79,17 +96,13 @@ dependencies:
       # Jupyter
       - jupyterlab==3.0.13
       - jupyterlab-server==2.4.0
-      - jupyter-packaging==0.7.12
-      - jupyter-server==1.15.4 # Solves ImportError: cannot import name 'get_version_info' from 'jupyter_packaging'
       - ipywidgets==7.6.3
       - ipympl==0.7.0
       - jupytext
-      - papermill
-      - pandoc
-      - ipython
+      - papermill==2.3.3
 
       # Apps
-      - streamlit==0.80.0
+      # - streamlit==0.80.0
 
       # Terminal Formatting
       - rich
@@ -100,3 +113,4 @@ dependencies:
       # R users
       - radian
       - jedi==0.17.2
+  
