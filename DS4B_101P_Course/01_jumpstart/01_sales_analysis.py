@@ -35,7 +35,7 @@ from mizani.breaks import date_breaks
 from mizani.formatters import date_format, currency_format
 
 # Misc
-from os import mkdir
+from os import mkdir, getcwd
 from rich import pretty
 pretty.install()
 
@@ -44,12 +44,18 @@ np.sum([1,2,3])
 
 # 2.0 Importing Data Files ----
 
-# help(pd.read_excel)
+help(pd.read_excel)
 # - Use "q" to quit
 
+# getcwd()
+bikes_df = pd.read_excel("../00_data_raw/bikes.xlsx")
+bikes_df
 
+bikeshops_df = pd.read_excel("../00_data_raw/bikeshops.xlsx")
+bikeshops_df
 
-
+orderlines_df = pd.read_excel("../00_data_raw/orderlines.xlsx")
+orderlines_df
 
 # 3.0 Examining Data ----
 
