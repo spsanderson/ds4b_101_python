@@ -54,7 +54,10 @@ bikes_df
 bikeshops_df = pd.read_excel("../00_data_raw/bikeshops.xlsx")
 bikeshops_df
 
-orderlines_df = pd.read_excel("../00_data_raw/orderlines.xlsx")
+orderlines_df = pd.read_excel(
+    io = "../00_data_raw/orderlines.xlsx",
+    converters = {'order.date': str}
+    )
 orderlines_df
 
 # 3.0 Examining Data ----
