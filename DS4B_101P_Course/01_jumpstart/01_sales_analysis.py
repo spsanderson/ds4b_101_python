@@ -62,9 +62,30 @@ orderlines_df
 
 # 3.0 Examining Data ----
 
+s = bikes_df['description']
+freq_count_series = s.value_counts()
+freq_count_series.nlargest(5)
+top5_bikes_series = bikes_df['description'].value_counts().nlargest(5)
 
+fig = top5_bikes_series.plot(kind="barh")
+plt.show(fig)
 
 # 4.0 Joining Data ----
+
+bike_orderlines_joined_df = orderlines_df \
+    .drop(columns='Unnamed: 0', axis=1) \
+    .merge(
+        right = bikes_df,
+        how = 'left',
+        left_on = 'product.id',
+        right_on = 'bike.id'
+    ) \
+    .merge(
+        right = bikeshops_df,
+        how = 'left',
+        left_on = 'customer.id',
+        right_on = 'bikeshop.id'
+    )
 
 
 
